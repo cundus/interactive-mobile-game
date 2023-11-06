@@ -1,0 +1,12 @@
+{
+  "name": "interactive-mobile-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cundus/interactive-mobile-game.git",
+  "author": "Cundus <sundusardian@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}
