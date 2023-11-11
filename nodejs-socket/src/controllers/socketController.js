@@ -1,12 +1,14 @@
 const Player = require("../models/Player");
 const Game = require("../models/Game");
 
+const waitingPlayers = [];
+const activeGames = {};
+
 function handleConnection(socket) {
-   console.log("A user connected");
+   const { playerId, username, avatar } = socket.handshake.query;
+   console.log(username + " connected");
 
-   const { playerId, username } = socket.handshake.query;
-
-   const player = new Player(playerId, username, socket);
+   const player = new Player(playerId, username, avatar, socket);
 
    socket.player = player;
 

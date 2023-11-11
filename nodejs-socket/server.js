@@ -19,7 +19,4 @@ server.listen(PORT, () => {
    console.log("Server is running on port " + PORT);
 });
 
-const waitingPlayers = [];
-const activeGames = {};
-
 io.on("connection", socketController.handleConnection);
