@@ -1,9 +1,11 @@
 class Player {
-   constructor(id, username, avatar, socket) {
+   constructor(id, username, avatar, status, room) {
       this.id = id;
       this.username = username;
       this.avatar = avatar;
-      this.socket = socket;
+      this.status = status;
+      this.room = room;
+      this.score = 0;
    }
 }
 
